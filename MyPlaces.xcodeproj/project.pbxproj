@@ -15,6 +15,7 @@
 		78501AFF264D7B0B00893E25 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78501AFE264D7B0B00893E25 /* CustomTableViewCell.swift */; };
 		78501B062652B20B00893E25 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78501B052652B20B00893E25 /* PlaceModel.swift */; };
 		78501B0B2655602300893E25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78501B0A2655602200893E25 /* Images.xcassets */; };
+		785CB30C2656B81000BD272E /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785CB30B2656B81000BD272E /* NewPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		782793AA26443C9600F9FC63 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78501AFE264D7B0B00893E25 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		78501B052652B20B00893E25 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
-		78501B0A2655602200893E25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
+		78501B0A2655602200893E25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		785CB30B2656B81000BD272E /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				78501AFE264D7B0B00893E25 /* CustomTableViewCell.swift */,
 				78501B0A2655602200893E25 /* Images.xcassets */,
 				7827939A2644334B00F9FC63 /* Main.storyboard */,
+				785CB30B2656B81000BD272E /* NewPlaceViewController.swift */,
 				7827939F2644334D00F9FC63 /* LaunchScreen.storyboard */,
 				782793A22644334D00F9FC63 /* Info.plist */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				782793AB26443C9600F9FC63 /* MainViewController.swift in Sources */,
+				785CB30C2656B81000BD272E /* NewPlaceViewController.swift in Sources */,
 				782793952644334B00F9FC63 /* AppDelegate.swift in Sources */,
 				78501B062652B20B00893E25 /* PlaceModel.swift in Sources */,
 				78501AFF264D7B0B00893E25 /* CustomTableViewCell.swift in Sources */,
