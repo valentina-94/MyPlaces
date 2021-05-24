@@ -13,8 +13,7 @@ class NewPlaceViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView()
-
-        
+    
     }
     
     // MARK: Table view delegate
