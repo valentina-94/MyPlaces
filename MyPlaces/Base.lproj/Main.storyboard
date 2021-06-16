@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XWq-VK-iIn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XWq-VK-iIn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Fcg-eE-xnI" customClass="CustomTableViewCell" customModule="MyPlaces" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="85"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fcg-eE-xnI" id="pnc-gz-Wu2">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
@@ -68,6 +68,7 @@
                                     <outlet property="locationLabel" destination="9li-HF-uWA" id="0Sk-Hv-ZhS"/>
                                     <outlet property="nameLabel" destination="bZv-bb-lHG" id="6d8-Zg-J5L"/>
                                     <outlet property="typeLabel" destination="kjE-Po-7JN" id="ue8-sL-Gy6"/>
+                                    <segue destination="tg7-y3-vVy" kind="show" identifier="showDetail" id="3tB-O7-BCo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,7 +77,7 @@
                             <outlet property="delegate" destination="cZn-jm-Myu" id="eKV-fl-Hmo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Places" id="t68-R5-sA3">
+                    <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="t68-R5-sA3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TnH-sH-r7Q">
                             <connections>
                                 <segue destination="1yE-ua-Rhr" kind="presentation" modalTransitionStyle="crossDissolve" id="0nD-zS-W0C"/>
@@ -101,7 +102,7 @@
                             <tableViewSection id="sVr-8n-nTS">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="ttt-fU-4S4">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ttt-fU-4S4" id="zkO-Up-4iY">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
@@ -121,7 +122,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="qEj-MA-vZb">
-                                        <rect key="frame" x="0.0" y="278" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="274.5" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qEj-MA-vZb" id="QDE-3j-oQq">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -156,7 +157,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="Pts-pX-3Bu">
-                                        <rect key="frame" x="0.0" y="353" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pts-pX-3Bu" id="pwu-na-1A8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -191,7 +192,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="EJH-jt-yhg">
-                                        <rect key="frame" x="0.0" y="428" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="424.5" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EJH-jt-yhg" id="4X5-Py-G8n">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -233,7 +234,7 @@
                             <outlet property="delegate" destination="tg7-y3-vVy" id="8m3-dF-8dd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Place" id="UG6-qM-zfB">
+                    <navigationItem key="navigationItem" title="New Place" largeTitleDisplayMode="always" id="UG6-qM-zfB">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gkZ-fk-nag">
                             <connections>
                                 <action selector="cancelAction:" destination="tg7-y3-vVy" id="6fg-4y-hFN"/>
@@ -256,14 +257,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lu-Qd-BDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="cUd-oT-8bT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1895.6521739130437" y="24.776785714285712"/>
+            <point key="canvasLocation" x="1039" y="25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="igp-BX-juk">
             <objects>
                 <navigationController id="XWq-VK-iIn" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2d0-0F-dJb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="2d0-0F-dJb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
@@ -293,9 +294,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdL-6I-zle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="24.776785714285712"/>
+            <point key="canvasLocation" x="1038" y="-654"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3tB-O7-BCo"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="99.5" height="115"/>
         <systemColor name="systemBackgroundColor">
